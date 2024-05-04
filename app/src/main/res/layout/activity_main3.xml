@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/CorPrincipal"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Faça a sua pesquisa aqui"
+                android:inputType="textMultiLine" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="101dp">
+            </View>
+
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <ImageView
+                    android:id="@+id/sala1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:onClick="passarTela3"
+                    android:tag="1"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent">
+
+                </View>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_weight="1"
+                    android:text="Sala 1" />
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="2"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 2"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+                    </View>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="3"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 3"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="4"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 4"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="5"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 5"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="6"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 6" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="7"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 7" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="8"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 8" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="9"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 9" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/sala10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:onClick="passarTela3"
+                        android:tag="10"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="1"
+                        android:text="Sala 10" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/CorPrincipal">
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:onClick="passarTela3"></View>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:onClick="irParaReservas"
+                app:srcCompat="@android:drawable/ic_menu_today" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:onClick="irParaMeuPerfil"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
