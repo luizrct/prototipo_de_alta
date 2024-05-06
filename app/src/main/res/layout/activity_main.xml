@@ -37,7 +37,7 @@
                 android:id="@+id/textInputLayoutEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint=".         Email"
 
                 app:startIconDrawable="@drawable/ic_email"
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
@@ -53,17 +53,17 @@
             <!-- Campo de Senha -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayoutPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Senha"
-                app:startIconDrawable="@drawable/ic_password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                android:hint=".         Senha"
+                app:startIconDrawable="@drawable/ic_password">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
