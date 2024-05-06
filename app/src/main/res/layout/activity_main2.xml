@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center">
 
+        <!-- Cabeçalho "Meu Perfil" -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="60dp"
                 android:background="@color/CorPrincipal"
                 android:gravity="center">
 
@@ -25,97 +27,83 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Meu Perfil"
-                    android:textColor="#F3EBEB"
+                    android:textColor="#FFF"
                     android:textSize="30sp"
-                    android:textStyle="bold">
-
-                </TextView>
+                    android:textStyle="bold" />
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
+
+        <!-- Imagem do Perfil -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="20dp"/>
 
+        <!-- Nome do Usuário -->
         <TextView
             android:id="@+id/textNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome"
+            android:text="Nome do Usuário"
             android:textColor="@color/black"
-            android:textSize="30sp">
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"/>
 
-        </TextView>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-        </View>
-
+        <!-- Reservas -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ainda não há reservas"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
 
-        </TextView>
     </LinearLayout>
 
+    <!-- Barra de Navegação -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="0dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:background="@color/CorPrincipal">
-            <View
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-            </View>
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:onClick="irParaPesquisa"
-                app:srcCompat="@android:drawable/ic_menu_search" />
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-            </View>
+                android:src="@drawable/ic_pesquisa"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:onClick="irParaPesquisa"/>
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:onClick="irParaReservas"
-                app:srcCompat="@android:drawable/ic_menu_today" />
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-            </View>
+                android:src="@drawable/ic_reservas"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:onClick="irParaReservas"/>
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-            </View>
-
-
+                android:src="@drawable/ic_calendario"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
