@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PrototipoDeAlta" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/CorPrincipal</item>
+    </style>
+
+    <style name="Theme.PrototipoDeAlta" parent="Base.Theme.PrototipoDeAlta" />
+</resources>
